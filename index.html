@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Super Dev Portfolio World</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<!-- Task - 1 -->
+<section id="start">
+    <h1>SUPER DEV WORLD</h1>
+    <p>
+        PLAY MY INTERACTIVE PORTFOLIO GAME<br><br>
+        COLLECT ALL COINS 🪙<br>
+        AVOID ENEMIES 👾<br><br>
+        MOVE → ←<br>
+        JUMP SPACE
+    </p>
+    <button onclick="startGame()" class="btn-start">
+        START GAME
+    </button>
+</section>
+
+
+<!-- Task -2 -->
+<main id="world" class="game-world">
+
+    <!-- Sky Element -->
+    <div class="sun"></div>
+
+    <!-- Clouds (you'll add 3) -->
+    <div class="cloud cloud1"></div>
+    <div class="cloud cloud2"></div>
+    <div class="cloud cloud3"></div>
+    <div class="mountain" style="left:300px; bottom: 120px;"></div>
+    <div class="mountain" style="left:2000px; bottom: 120px;"></div>
+    <div class="mountain" style="left:4500px; bottom: 120px;"></div>
+
+    <!-- Ground -->
+    <div class="ground"></div>
+
+    <!-- PLAYER CHARACTER -->
+    <div id="player" class="player">
+        <div class="cap"></div>
+        <div class="face"></div>
+        <div class="body"></div>
+        <div class="legs"></div>
+    </div>
+
+<!-- Task - 3 -->
+<article class="panel" style="left:700px; bottom:180px;">
+    <h2 class="panelh2">ABOUT ME</h2>
+    <p>
+        I AM A FUTURE CODER<br><br>
+        I CREATE IMMERSIVE DIGITAL EXPERIENCES<br>
+        THIS IS MY FIRST GAME PORTFOLIO,<br>
+        I HOPE YOU ENJOY PLAYING IT!
+    </p>
+</article>
+
+<article class="panel" style="left:2300px; bottom:180px;">
+    <h2>SKILLS</h2>
+    <div class="skills">
+        <div class="skill">HTML</div>
+        <div class="skill">CSS</div>
+        <div class="skill">JAVASCRIPT</div>
+        <div class="skill">BLUEJ</div>
+    </div>
+</article>
+
+<article class="panel" style="left:4700px; bottom:180px;">
+    <h2>PROJECTS</h2>
+    <div class="project">3D GAME WEBSITE</div>
+    <div class="project">CODING CHALLENGES</div>
+    <div class="project">JAVA PROGRAMS</div>
+</article>
+
+<article class="panel" style="left:7000px; bottom:180px;">
+    <h2>CONTACT</h2>
+    <p>
+        EMAIL: tri29guna@gmail.com<br><br>
+        GITHUB: tri29guna-ops <br><br>
+        INSTAGRAM: NO ACCOUNT YET
+    </p>
+</article>
+
+<!-- Task -4  -->
+<!-- ===== COINS TO COLLECT ===== -->
+<div class="coin" style="left:1550px; bottom:420px;"></div>
+<div class="coin" style="left:3450px; bottom:470px;"></div>
+<div class="coin" style="left:5650px; bottom:430px;"></div>
+<div class="coin" style="left:6400px; bottom:250px;"></div>
+<div class="coin" style="left:7800px; bottom:260px;"></div>
+
+<!-- ===== ENEMIES TO AVOID ===== -->
+<div class="enemy" style="left:1900px; bottom:120px;">
+    <div class="horn-left"> </div>
+    <div class="horn-right"> </div>
+</div>
+<div class="enemy" style="left:4200px; bottom:120px;">
+    <div class="horn-left"> </div>
+    <div class="horn-right"> </div>
+</div>
+<div class="enemy" style="left:6000px; bottom:120px;">
+    <div class="horn-left"> </div>
+    <div class="horn-right"> </div>
+</div>
+<div class="enemy" style="left:7600px; bottom:120px;">
+    <div class="horn-left"> </div>
+    <div class="horn-right"> </div>
+</div>
+<div id="flag" style="left:8300px; bottom:120px;">
+    <div class="flag-top"></div>
+</div>
+
+</main>
+
+<!-- Task -5 -->
+
+<div id="ui" class="ui-container">
+        <span id="coins">COINS: 0</span>
+        <span id="worldLabel1">WORLD: DEV-1</span>
+        <span id="lives">🎮</span>
+    </div>
+
+    <div id="contactPopup" class="popup-overlay">
+        <div class="popup-box">
+            <h1>🚀 MISSION COMPLETE</h1>
+            <p>YOU COMPLETED THE PORTFOLIO WORLD.<br><br>SEND YOUR QUERY OR PROJECT REQUEST.</p>
+            <form id="contactForm" onsubmit="event.preventDefault(); submitForm();">
+                <input type="text" placeholder="YOUR NAME" required>
+                <input type="email" placeholder="YOUR EMAIL" required>
+                <textarea placeholder="YOUR MESSAGE" required></textarea>
+                <button type="submit" class="btn-submit">SEND MESSAGE</button>
+            </form>
+            <button onclick="closePopup()" class="btn-close">✕</button>
+        </div>
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>
