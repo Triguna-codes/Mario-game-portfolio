@@ -374,6 +374,7 @@ touch-action: none;
     justify-content: center;
     align-items: center;
      z-index: 200;
+      -webkit-overflow-scrolling: touch; 
 }
 
 .popup-box{
