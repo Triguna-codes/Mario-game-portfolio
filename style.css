@@ -9,9 +9,8 @@ body{
     overflow-y: hidden;
     font-family: 'Press Start 2P', cursive;  /* Game font */
     background: #5c94fc;
-     min-height: 100vh; 
-    width: 100vw;
-touch-action: none; 
+     min-height: 100vh;  
+    width: 9000px;
 }
 
 
@@ -374,7 +373,6 @@ touch-action: none;
     justify-content: center;
     align-items: center;
      z-index: 200;
-      -webkit-overflow-scrolling: touch; 
 }
 
 .popup-box{
